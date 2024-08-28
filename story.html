@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>story page</title>
+    <style>
+        body {
+            max-width: 600px;
+            max-height: 1300px;
+            margin: auto;
+            border: 1px solid red;
+            height: 100vh;
+            background: black;
+        }
+        #layout {
+            position: relative;
+        }
+        video {
+            width: 100%;
+            height: 100vh;
+        }
+        #arrowback {
+            width: 70px;
+        }
+        #account {
+            width: 50px;
+            margin-left: 15px;
+            margin-right: 10px;
+        }
+        b {
+            display: inline-block;
+            transform: translateY(-15px);
+            color: black;
+        }
+        header {
+            position: fixed;
+        }
+        aside {
+            position: absolute;
+            bottom: 30%;
+            right: 5%;
+        }
+        #heart {
+            width: 50px;
+        }
+        #send {
+            width: 45px;
+            margin-bottom: 5px;
+        }
+        #chat {
+            width: 40px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <header>
+        <a href="main.html"><img src="images/arrowback.png" id="arrowback"></a><br>
+        <a href="#"><img src="images/account.png" id="account"><b>Nickname2</b></a>
+    </header>
+        <video controls>
+            <source src="images/dog.mp4" type="video/mp4">
+        </video>
+        <aside>
+            <img src="images/heart.png" id="heart"><br>
+            <img src="images/send.png" id="send"><br>
+            <img src="images/chat.png" id="chat">
+        </aside>
+    </div>
+</body>
+</html>

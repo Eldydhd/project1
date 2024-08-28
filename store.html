@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            max-width: 600px;            
+            margin: auto;
+            border: 1px solid red;
+            min-height: 100vh;
+        }
+        img {
+            width:100%; display:block;
+        }
+        #layout {
+            position: relative; overflow:hidden;
+        }
+        header a {
+            width: 70px; display:block;
+        }        
+        #search {
+            display: flex; position:relative;
+        }
+        h1 {
+            padding :0  20px 0 10px;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            flex:1;
+        }
+        button {
+            width: 50px;
+            background: none;
+            border: none;
+        }
+        .search_input {
+            height: 30px;
+            flex: 1;
+        }
+        #slide {
+            display:flex; padding-top:30px; animation: go 10s 1s infinite alternate;
+            position: relative;
+        }
+        #slide img {
+            padding: 30px;
+        }
+        @keyframes go {
+            0%   {left:0;}
+            33%  {left:-100%;}
+            66%  {left:-200%;}
+            100%  {left:-300%;}
+        }
+        #ranking {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #ranking a {
+            width: 30%;
+            display: block;
+            position: relative;
+        }
+        #ranking b {
+            position: absolute;
+            z-index: 1;
+            font-size: 3rem;
+            top: 2%;
+            left: 2%;
+            color: black;
+        }
+        #more {
+            margin-right: 20px;
+            margin-left: auto;
+            width: 60px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <a href="main.html"><img src="images/arrowback.png"></a>
+        </header>
+        <section id="search">
+            <h1>장터</h1>
+            <form>
+                <input class="search_input" type="text" placeholder="Search">
+                <button type="button"><img src="images/search.png"></button>
+            </form>
+        </section>
+        <div id="slide">
+            <img src="images/pic1.webp" alt="slide">
+            <img src="images/pic2.webp" alt="slide">
+            <img src="images/pic3.webp" alt="slide">
+            <img src="images/pic4.webp" alt="slide">
+        </div>
+        <h2>랭킹</h2>
+        <a href="#"><P id="more">더보기</P></a>
+        <div>
+            <section id="ranking">
+                <a href="#"><img src="images/pic5.webp"><b>1</b></a>
+                <a href="#"><img src="images/pic6.webp"><b>2</b></a>
+                <a href="#"><img src="images/pic7.webp"><b>3</b></a>
+                <a href="#"><img src="images/pic8.webp"><b>4</b></a>
+                <a href="#"><img src="images/pic9.webp"><b>5</b></a>
+                <a href="#"><img src="images/pic10.webp"><b>6</b></a>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
