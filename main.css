@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* 기본적인 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#layout {
+    position: relative;
+    max-width: 600px;
+    /* max-height: 1300px; */
+    margin: auto;
+    height: 100vh;
+}
+header {
+    display: flex; /* Flexbox 레이아웃을 사용하여 수평 정렬 */
+    align-items: flex-end; /* 수직 중앙 정렬 */
+    justify-content: space-between;
+    padding: 10px;
+}
+header img {
+    width: 60px;
+}
+header a { 
+    text-decoration: none;
+}
+#menu nav {
+    position: absolute;
+    width: 85%;
+    height: 90vh;
+    background: #ddd;
+    z-index: 1;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+/* #menu {
+    margin: 10px 0 10px 30px} */
+#pont {
+    display: flex;
+    margin-left: 30%;
+    letter-spacing: -1px;
+}
+#pont a {
+    color: black;
+}
+
+main {
+    border: 1px solid #333;
+}
+main a {
+    text-decoration: none;
+}
+#main nav {
+    background: rgba(255,255,255,0.95);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+#main nav ul {
+    list-style: none;
+    flex: 1;
+}
+
+#main nav li {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+#main nav ul a {
+    color: black;
+    font-size: 2rem;
+    flex: 1;
+}
+
+#main nav button {
+    padding: 10px;
+    height: 100vh;
+}
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* min-height: 89vh; */
+}
+#wrap > div {
+    width: 50%;
+    padding:15% 5% ;
+    border: 1px solid black;
+}
+
+#wrap img {
+    display: block;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+.subtext {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+
+@media(min-width: 601px ) {
+       #main nav{ max-width: 600px;left: calc((100vw - 600px) / 2);}
+}
